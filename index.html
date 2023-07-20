@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '640px',
+                    md: '768px',
+                    lg: '1024px',
+                    xl: '1440px',
+                },
+                extend: {
+                    colors: {                        
+                    }
+                }
+            }
+        }
+    </script>
+   
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+<body class="lg:px-16 font-Poppins">
+
+    <header class=" w-full">
+        <nav>
+            <div class=" w-full flex justify-between p-8 ">
+            <h1 class="text-2xl font-bold text-blue-900">Landing</h1>
+            <div class="hidden lg:flex md:flex font-semibold">
+                <ul class="flex space-x-8 text-blue-900 text-md ">
+                    <div class="flex space-x-1">
+                <li>Home</li>
+                    <a class="pt-1" href="#"><ion-icon name="caret-down"></ion-icon></a>
+                </div>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+                </ul>
+            </div>
+            <!-- mobile -->
+            <div class="lg:hidden md:hidden">
+             <a class="text-4xl" href="#"><ion-icon name="menu"></ion-icon></a>   
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!--  -->
+ <!-- page1 -->
+    <main>
+        <section class="p-8 ">
+        <div class="flex flex-col space-y-12 lg:flex-row lg:space-x-24  lg:space-y-0">
+
+            <div class="flex flex-col space-y-8 lg:w-2/5">
+            <div class="text-blue-900 text-4xl font-bold leading-normal">
+                <h1>Introduce Your Product Quickly & Effectively </h1>
+            </div>
+            <p class="text-lg text-black"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat voluptatibus placeat exercitationem labore deleniti suscipit saepe facilis assumenda tenetur!</p>
+
+            <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui veniam accusantium asperiores, porro obcaecati.</p>
+
+            <div class="flex space-x-10">
+                <button class="bg-blue-900 px-6 py-2 text-white font-semibold shadow-lg rounded-md hover:bg-white hover:text-blue-900 hover:border-2 hover:border-blue-900 transition ease-in hover:scale-110">Purchase UI Kit</button>
+                <button class="border-2 px-6 py-2 text-blue-900 font-semibold border-blue-900 shadow-lg rounded-md hover:bg-blue-900 hover:text-white transition ease-in hover:scale-110 ">Learn more</button>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 lg:pt-14 transition hover:scale-105 ease-in">
+           <img class="md:w-9/12  lg:w-full" src="./img1.jpg" alt="">
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- end of page1 -->
+<!-- page2 -->
+
+<section>
+    <div class="h-screen p-8">
+        <div class="flex flex-col lg:space-y-20 space-y-10">
+            <!-- part1 -->
+            <div class=" flex flex-col lg:flex-row lg:space-y-0 lg:space-x-24 space-y-10">
+                <div class="flex flex-col space-y-8 lg:w-3/5">
+                    <h1 class="text-blue-900 text-3xl font-bold leading-normal">Design Your Own Page</h1>
+                    <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minus facilis architecto harum at recusandae, nesciunt, eveniet ea quisquam, quasi cupiditate. Veniam, non sequi!</p>
+                    <div class="grid grid-cols-1 space-y-4 lg:space-y-0 md:space-y-0 lg:grid-cols-2 md:grid-cols-2 ">
+                        <div class="flex flex-col space-y-2">
+                            <a class="text-blue-900 text-4xl" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <h1 class="text-2xl font-semibold text-blue-900">Linkedin</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <a class="text-blue-900 text-4xl" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <h1 class="text-2xl font-semibold text-blue-900">facebook</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        </div>
+
+                </div>
+
+                </div>
+                <!--  -->
+                <div class="lg:w-2/5 lg:pt-14 transition ease-in hover:scale-105">
+                    <img class="md:w-8/12 lg:w-full" src="./img3.jpg" alt="">
+
+                </div>
+            </div>
+             <!--part2  -->
+             <div class="flex flex-col lg:flex-row space-y-10 lg:space-x-24 ">
+                <div class="flex flex-col space-y-8 lg:w-3/5">
+                    <h1 class="text-blue-900 text-3xl font-bold leading-normal">Light, Fast and Powerful </h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe adipisci quaerat nisi accusamus tempore veniam cupiditate amet incidunt, unde aut eum. A, explicabo.</p>
+                    <div class="flex inline-flex space-x-2 w-40 px-4 py-2 rounded-md bg-blue-100  hover:bg-blue-300">
+                        <p class="text-lg font-semibold">For product</p>
+                        <a class="text-blue-900 text-xl pt-px" href="#"><ion-icon name="call"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="lg:w-2/5 transition hover:scale-105 ease-in ">
+                    <img class="md:w-8/12 lg:w-full lg:h-80" src="./img2.jpg" alt="">
+                </div>
+
+             </div>
+             <!--part3  -->
+             <div class="flex flex-col lg:flex-row space-y-10 lg:space-x-24">
+                <div class="lg:w-2/5 transition hover:scale-105 ease-in">
+                    <img class="md:w-8/12 lg:w-full lg:pt-12 " src="./img4.jpg" alt="">
+                </div>
+                <div class="flex flex-col space-y-8 lg:w-3/5">
+                    <h1 class="text-blue-900 text-3xl font-bold leading-normal">Immense Yourself in Music</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolorem vero dignissimos optio officia pariatur perferendis, dolor quibusdam provident, voluptate ex incidunt magni, mollitia quod voluptatem repellendus qui!</p>
+
+                    <p class="text-center w-40 px-5 py-2 bg-blue-900 text-white shadow-lg rounded-md transition ease-in hover:scale-110 ">Book Order</p>
+
+                </div>
+             </div>
+             <div>
+
+                <div class="flex flex-col space-y-10">
+                    <h1 class="text-3xl text-blue-900 text-center font-bold">Have an Unforgettable Experience</h1>
+
+                    <div class="flex flex-col space-y-8">
+                        <h1 class="text-2xl text-blue-900 font-bold">OverView</h1>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas delectus neque id earum, nesciunt sint pariatur rerum culpa, similique voluptatibus veritatis quam molestiae? Assumenda ipsam laborum eius non maxime cum quia officiis sit exercitationem porro, quisquam dignissimos odit maiores ullam.</p>
+                        </div>  
+
+                </div>
+            </div>
+        </div>
+        <!--  -->
+           <div class="h-screen flex flex-col pt-20">
+
+            <div class="h-screen space-y-10 flex flex-col justify-center items-center">
+                <h1 class="text-center text-3xl font-semibold text-blue-900">A Price to Suit Everyone </h1>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, beatae deleniti quae nulla quidem earum id. Vero dignissimos earum accusamus, rerum praesentium nobis excepturi?</p>
+                <div class="text-center flex flex-col space-y-2">
+                    <p class="text-5xl font-bold text-blue-900">$40</p>
+                    <p class="text-blue-900 font-semibold">UI DESIGN KIT</p>
+                </div>
+
+                <div>
+                    <p class="text-md text-blue-900 text-center">See, One price. Simple.</p>
+                </div>
+                
+                     
+               <a class="px-5 py-2 bg-blue-900 text-white font-semibold shadow-lg rounded-md transition ease-in hover:scale-110" href="#">Purchase Now</a>
+            
+               
+
+                <div class="flex flex-row space-x-6 justify-center text-2xl text-blue-900 mb-20 ">
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    
+                </div>
+
+                <p class="text-lg font-semibold text-blue-900">@2023 YourCompany</p>
+    
+
+
+
+            </div>
+
+            
+        
+        </div>
+        
+
+
+    </section>
+<div class="h-screen"></div>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
